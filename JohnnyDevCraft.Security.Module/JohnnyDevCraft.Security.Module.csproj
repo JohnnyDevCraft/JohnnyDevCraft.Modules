@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Version>23.2.6.1</Version>
+    <Title>JohnnyDevCraft XAF Enhanced Security</Title>
+    <Description>Add some tools to simplify working with security in code. </Description>
+    <Copyright>2024 JohnnyDevCraft</Copyright>
+    <PackageIcon>johnnydevcraft_round_wp3_icon.ico</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Model.DesignedDiffs.xafml" />
+    <None Update="johnnydevcraft_round_wp3_icon.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" Version="23.2.6" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.2.6" />
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" Version="23.2.6" />
+    <PackageReference Include="DevExpress.ExpressApp.EFCore" Version="23.2.6" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" Version="23.2.6" />
+    <PackageReference Include="DevExpress.Persistent.Base" Version="23.2.6" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.EFCore" Version="23.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+    <PackageReference Include="Azure.Identity" Version="1.12.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.2" />
+  </ItemGroup>
+</Project>

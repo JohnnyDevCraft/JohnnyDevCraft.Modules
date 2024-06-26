@@ -41,6 +41,13 @@ public static class SecurityExtensions
         user.SetPassword(password);
         return (space, user);
     }
+
+    public static (IObjectSpace, T) AddUserInfo<T>(this (IObjectSpace, T) input, string userKey)
+    {
+        var (objectspace, user) = input;
+        ((ISecurityUserWithLoginInfo)user).CreateUserLoginInfo(SecurityDefaults.PasswordAuthentication, userKey);
+        return (objectspace, user);
+    }
     
     public static (IObjectSpace, T) AddRole<T>(this (IObjectSpace, T) input, string roleName) where T : PermissionPolicyUser
     {

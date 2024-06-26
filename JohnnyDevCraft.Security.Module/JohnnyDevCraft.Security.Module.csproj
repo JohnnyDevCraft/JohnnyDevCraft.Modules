@@ -3,22 +3,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <Deterministic>false</Deterministic>
-    <AssemblyVersion>1.0.*</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>23.2.6.2</AssemblyVersion>
+    <FileVersion>23.2.6.2</FileVersion>
     <Configurations>Debug;Release;EasyTest</Configurations>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Version>23.2.6.1</Version>
+    <Version>23.2.6.2</Version>
     <Title>JohnnyDevCraft XAF Enhanced Security</Title>
     <Description>Add some tools to simplify working with security in code. </Description>
     <Copyright>2024 JohnnyDevCraft</Copyright>
-    <PackageIcon>johnnydevcraft_round_wp3_icon.ico</PackageIcon>
+    <PackageIcon>JohnnyDevCraft Round.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/JohnnyDevCraft/JohnnyDevCraft.Modules</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JohnnyDevCraft/JohnnyDevCraft.Modules</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Model.DesignedDiffs.xafml" />
-    <None Update="johnnydevcraft_round_wp3_icon.ico">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
@@ -37,5 +37,8 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
     <PackageReference Include="Azure.Identity" Version="1.12.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JohnnyDevCraft Round.png" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>
